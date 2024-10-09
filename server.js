@@ -72,6 +72,14 @@ app.use('/credit-card', creditCardRoutes);
 const checkoutRoutes = require('./routes/checkoutRoutes');
 app.use('/checkout', checkoutRoutes);
 
+// Mailing List routes
+const mailingListRoutes = require('./routes/mailingList'); // Update with the correct path
+app.use('/mailing-list', mailingListRoutes);
+
+// Rewards routes
+const rewardsRoutes = require('./routes/rewards');
+app.use('/rewards', rewardsRoutes);
+
 // Home route
 app.get('/', (req, res) => {
   res.send('API is running...');
